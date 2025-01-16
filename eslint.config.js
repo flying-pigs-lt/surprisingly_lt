@@ -11,6 +11,7 @@ export default antfu({
     'vue/block-order': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     'prefer-promise-reject-errors': 'off',
+    'no-console': 'off',
   },
   languageOptions: {
     globals: {

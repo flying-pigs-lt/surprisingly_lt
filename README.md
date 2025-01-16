@@ -4,18 +4,10 @@
  * @LastEditors: Flying_pigs 3051244658@qq.com
  * @LastEditTime: 2024-09-20 13:57:01
  * @FilePath: \surprisingly_lt\README.md
- * @Description: 
- * 
- * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.
 -->
-<!-- <p align="center">
-  <a href="https://github.com/zclzone/vue-naive-admin">
-    <img alt="Vue Naive Admin Logo" width="200" src="./src/assets/images/logo.png">
-  </a>
-</p>
-<p align="center">
-  <a href="./LICENSE"><img alt="MIT License" src="https://badgen.net/github/license/zclzone/vue-naive-admin"/></a>
-</p> -->
 
 ## 简介
 
@@ -38,4 +30,3 @@ Vue Naive Admin 2022年2月开始开源，从 1.0 到现在的 2.0，一直秉�
 - 🔐 基于Redis集成 `无感刷新`，用户登录态可控，安全与体验缺一不可
 - ✨ 基于 Naive UI 封装 `message` 全局工具方法，支持批量提醒，支持跨页面单例模式
 - ⚡️ 基于 Naive UI 封装常用的业务组件，包含`Page` 组件、`CRUD` 表格组件及 `Modal`组件等，简单易用，减少大量重复性工作
-

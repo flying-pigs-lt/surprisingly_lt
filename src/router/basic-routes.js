@@ -18,7 +18,6 @@ export const basicRoutes = [
     },
   },
 
-
   {
     name: '404',
     path: '/404',
@@ -45,6 +44,15 @@ export const basicRoutes = [
     component: () => import('@/views/blog/index.vue'),
     meta: {
       title: '个人首页',
+      layout: 'empty',
+    },
+  },
+  {
+    name: 'Three-demo1',
+    path: '/three-demo1',
+    component: () => import('@/views/three/three_demo1/index.vue'),
+    meta: {
+      title: 'three-demo1',
       layout: 'empty',
     },
   },

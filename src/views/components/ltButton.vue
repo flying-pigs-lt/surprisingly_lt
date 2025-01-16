@@ -1,9 +1,6 @@
 <template>
-    <div class="ltButton">
-        
-    </div>
+  <div class="ltButton" />
 </template>
-
 
 <script>
 

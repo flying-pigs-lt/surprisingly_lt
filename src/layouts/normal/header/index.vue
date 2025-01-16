@@ -39,7 +39,7 @@
 import { ToggleTheme } from '@/components'
 import { AppTab, Fullscreen, MenuCollapse, UserAvatar } from '@/layouts/components'
 
-function handleLinkClick(link) {
-  window.open(link)
-}
+// function handleLinkClick(link) {
+//   window.open(link)
+// }
 </script>

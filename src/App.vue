@@ -1,11 +1,3 @@
-<!--------------------------------
- - @Author: Ronnie Zhang
- - @LastEditor: Ronnie Zhang
- - @LastEditTime: 2023/12/16 18:49:42
- - @Email: zclzone@outlook.com
- - Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
- --------------------------------->
-
 <template>
   <n-config-provider
     class="wh-full"
@@ -28,13 +20,13 @@
 
 <script setup>
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui'
+import { provide } from 'vue'
+import * as echarts from 'echarts/core'
 import { layoutSettingVisible } from './settings'
 import { LayoutSetting } from '@/components'
 import { useAppStore, useTabStore } from '@/store'
 
-import { provide , onMounted } from 'vue'
-import * as echarts  from 'echarts/core'
-provide('echarts', echarts);
+provide('echarts', echarts)
 
 const layouts = new Map()
 function getLayout(name) {

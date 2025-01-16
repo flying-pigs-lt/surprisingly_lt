@@ -49,7 +49,7 @@
             type="primary"
             ghost
             tag="a"
-            href="https://docs.isme.top/web/#/624306705/188522224"
+            href="https://github.com/flying-pigs-lt/surprisingly_lt.git"
             target="__blank"
           >
             开发文档
@@ -58,7 +58,7 @@
             type="primary"
             class="ml-12"
             tag="a"
-            href="https://github.com/zclzone/vue-naive-admin/tree/2.x"
+            href="https://github.com/flying-pigs-lt/surprisingly_lt.git"
             target="__blank"
           >
             代码仓库
