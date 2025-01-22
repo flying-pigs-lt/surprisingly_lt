@@ -21,6 +21,9 @@
             </section>
             <footer class="custom-dialog-footer">
               <slot name="footer">
+                <!-- <button @click="confirm">确定</button>
+                <button @click="close">关闭</button> -->
+
                 <t-button text="确 定" @click="confirm" />
                 <t-button text="关 闭" @click="close" />
               </slot>
@@ -146,7 +149,7 @@
   .custom-dialog-footer {
     display: flex;
     justify-content: flex-end;
-    /* padding: 10px; */
+    /* margin: 10px; */
   }
   
   button {

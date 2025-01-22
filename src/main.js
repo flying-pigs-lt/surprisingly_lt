@@ -3,23 +3,20 @@ import '@/styles/global.scss'
 import 'uno.css'
 
 import { createApp } from 'vue'
+import naive from 'naive-ui'
 import App from './App.vue'
 import { setupRouter } from './router'
 import { setupStore } from './store'
 import { setupNaiveDiscreteApi } from './utils'
 import { setupDirectives } from './directives'
-import naive from 'naive-ui';
-import TButton from '@/views/blog/components/TButton.vue'  // 引入 TButton
+import TButton from '@/views/blog/components/TButton.vue' // 引入 TButton
 
-import store from '@/views/blog/utils/store.js'  // 引入 store
-
-
-
+import store from '@/views/blog/utils/store.js' // 引入 store
 
 async function bootstrap() {
   const app = createApp(App)
-  app.use(naive);
-  app.use(store);
+  app.use(naive)
+  app.use(store)
   // 全局注册 TButton 组件
   app.component('TButton', TButton)
   setupStore(app)

@@ -3,7 +3,7 @@
     <div class="blog-home">
       <div class="blog-home-header">
         <div class="header-nav">
-          <TopNavigationBar @switchWallpaper="switchWallpaper" @switchContent="switchContent" />
+          <TopNavigationBar @switch-wallpaper="switchWallpaper" @switch-content="switchContent" />
         </div>
       </div>
       <div class="blog-home-content">
@@ -12,21 +12,19 @@
         </template>
       </div>
     </div>
-
-
   </div>
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { ref } from 'vue'
 
-import  TopNavigationBar  from '@/views/blog/components/TopNavigationBar.vue'
-import  BlogHome  from '@/views/blog/content/blog-home.vue'
+import TopNavigationBar from '@/views/blog/components/TopNavigationBar.vue'
+import BlogHome from '@/views/blog/content/blog-home.vue'
 
 const currentImageUrl = ref('') // 当前图片的路径
 const contentIndex = ref('1') // 当前内容的索引
 
-//获取背景图片
+// 获取背景图片
 function switchWallpaper(data) {
   currentImageUrl.value = data
 }
@@ -34,7 +32,6 @@ function switchWallpaper(data) {
 function switchContent(key) {
   contentIndex.value = key
 }
-
 </script>
 
 <style>
@@ -50,7 +47,26 @@ function switchContent(key) {
   background-size: cover;
   background-position: center center;
 
-  font-family: 'echo', "Chinese Quotes", "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    'echo',
+    'Chinese Quotes',
+    'Inter var',
+    'Inter',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   /* margin: 0 auto; */
 }
 
